@@ -1,3 +1,5 @@
+# Statement
+Only the _controller.py_ is implemented by me. Other files are from unkonw resources. If any infringement involved, I will delete them. 
 # The lift simulator
 
 The simulator consists of the following classes
@@ -43,10 +45,9 @@ This represents the entire building. Methods available are `floors`, `lifts` and
 
 ## Controller
 
-Controller has a method `building(self,building)`, which will be passed the building object when the simulation starts. At every time instant, the controller will have its `tick` method invoked with the current time as a parameter. 
-Then the lifts will move , and  people will enter/leave lifts (if the doors are open or closed) according to the controller setting.
+You will write this class. Your controller should have a method `building(self,building)`, which will be passed the building object when the simulation starts. At every time instant, the controller will have its `tick` method invoked with the current time as a parameter. You can then tell lifts to move (by setting their destination), and tell people to enter/leave lifts (if the doors are open or closed).
 
 # Using the simulator
 
-The last two lines in the simulator file show how the simulator is run by repeatedly calling the `building.tick()` method. To use your own controller, just change the line that says `controller=Controller()` to your own controller class (and import that class at the top of your file). See the sample controller for details.
-
+The last two lines in the simulator file show how the simulator is run by repeatedly calling the `building.tick()` method. 
+the line that says `controller=Controller()` will use controller class 
