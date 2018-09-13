@@ -43,7 +43,8 @@ This represents the entire building. Methods available are `floors`, `lifts` and
 
 ## Controller
 
-You will write this class. Your controller should have a method `building(self,building)`, which will be passed the building object when the simulation starts. At every time instant, the controller will have its `tick` method invoked with the current time as a parameter. You can then tell lifts to move (by setting their destination), and tell people to enter/leave lifts (if the doors are open or closed).
+Controller has a method `building(self,building)`, which will be passed the building object when the simulation starts. At every time instant, the controller will have its `tick` method invoked with the current time as a parameter. 
+Then the lifts will move , and  people will enter/leave lifts (if the doors are open or closed) according to the controller setting.
 
 # Using the simulator
 
